@@ -10,6 +10,10 @@
         function myFunction() {
             var txt = document.getElementById("myText");
             alert(txt.value);
+            b=document.getElementsByName("LastName")[0];
+            alert(b.value);
+            c=document.getElementsByTagName("input");
+            alert(c[2].value);
         }
 
     </script>
@@ -17,7 +21,8 @@
 
 <body>
     <form onsubmit="myFunction()">
-        <input type="text" id="myText"></input>
+        <input type="text" id="myText">
+        <input type="text" name="LastName">
         <input type="submit" value="Submit">
     </form>
 </body>
