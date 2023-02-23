@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uservalidation</title>
+    <script>
+        function validator(){
+            name=document.getElementById("username").value;
+            password=document.getElementsByName("userpass")[0].value;
+            if(name=="student"&&password=="sou"){
+                alert("valid user");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="validator()">
+    <input type="text"  id="username">
+    <input type="password" name="userpass">
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
