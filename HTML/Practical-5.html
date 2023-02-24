@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5</title>
+</head>
+
+<body bgcolor="powderblue">
+    <form action="" method="post">
+        <h1 align="center">Registration Form</h1>
+        <hr>
+        <table border="2" width="50%" height="50%" align="center">
+            <tr>
+                <th><b>First Name :</b></th>
+                <td><input type="text" required placeholder="Enter First Name" title="Fill the correct data"
+                        maxlength="20"></td>
+            </tr>
+            <tr>
+                <th> <b>Last Name : </b></th>
+                <td><input type="text" required placeholder="Enter Last Name" maxlength="20"></td>
+            </tr>
+
+            <tr>
+                <th> <b>Contact no. :</b></th>
+                <td><input type="text" pattern="\d{10}" minlength="10" maxlength="10" required
+                        placeholder="Enter Your Contact No."></td>
+            </tr>
+            <tr>
+                <th> <b>Landline no : (079-123456)</b></th>
+                <td><input type="text" pattern="[0-9]{3}-\d{6}" maxlength="10" required
+                        placeholder="Enter Your Landline No.">
+            </tr>
+            <tr>
+                <th><b>Email :</b></th>
+                <td><input type="email" required placeholder="Enter Your Email ID"
+                        pattern="[^@\t\r\n]+@[^@\t\r\n]+\.[^@ \t\r\n]+"></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td><input type="password" required placeholder="Enter a Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}"></td>
+            </tr>
+            <tr>
+                <th><b>Date of Birth</b></th>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td><input type="Number" min="18" max="40" width="600%" placeholder="Enter Age Between 18 to 40"
+                        required></td>
+            </tr>
+            <tr>
+                <th> <b>Gender</b></th>
+                <td>Male
+                    <input type="radio" name="gender">
+                    Female
+                    <input type="radio" name="gender">
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea name="Address" id="" cols="60" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td><select name="City" id="">
+                        <option value="" disabled selected>Select City</option>
+                        <option value="">Ahmedabad</option>
+                        <option value="">Vadodara</option>
+                        <option value="">Morbi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Pincode</th>
+                <td><input type="text" pattern="\d*" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"> <input type="submit"> <input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
