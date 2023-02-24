@@ -10,15 +10,15 @@
     <h1>Javascript Dates</h1>
     <h1>Using new Data()</h1>
     <p id="demo"></p>
-    <p id="demo1"></p>
+    <p name="demo1"></p>
     <p id="demo2"></p>
     <script>
         const d1= new Date("2022-03-25");
         const d=new Date();
         const d2=new Date(2018,11,24,10,33,30,0);
         document.getElementById("demo").innerHTML=d;
-        document.getElementById("demo1").innerHTML=d1;
-        document.getElementById("demo2").innerHTML=d2;
+        document.getElementsByName("demo1")[0].innerHTML=d1;
+        document.getElementsByTagName("p")[3].innerHTML=d2;
 
     </script>
 </body>

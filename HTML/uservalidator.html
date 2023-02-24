@@ -8,8 +8,8 @@
     <title>user</title>
     <script>
         function uservalidator() {
-            user = document.getElementById("user");
-            password = document.getElementsByName("pass")[0];
+            user = document.getElementById("user").value;
+            password = document.getElementsByName("pass")[0].value;
 
             if (user == "student" && password == "sou") {
                 alert("valid user");
