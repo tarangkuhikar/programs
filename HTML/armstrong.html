@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armstrong number</title>
     <script>
-        function armstrong(){
-          
-            num=document.getElementById("input1").value;
-            length=num.length;
-           
-            num=Number(num);
-            document.write(num)
-          
-        //     x=num;
-        //     sum=0;
-        //     while(x!=0){
-        //         rem=x%10;
-        //         sum=sum+(rem)**length;
-        //         x=(x-x%10)/10;               
-        //     }
-        //     if(sum==num){
-        //         document.write("your number is armstrong");
-        //     }
-        //     else{
-        //         document.write("your number is not armstrong");
-        //     }
+        function armstrong() {
+
+            num = document.getElementById("input1").value;
+            length = num.length;
+
+            num = Number(num);
+
+            x = num;
+            sum = 0;
+            while (x != 0) {
+                rem = x % 10;
+                sum = sum + (rem) ** length;
+                x = (x - x % 10) / 10;
+            }
+            if (sum == num) {
+                document.write("your number is armstrong");
+            }
+            else {
+                document.write("your number is not armstrong");
+            }
         }
-        
+
     </script>
 </head>
+
 <body>
     <form onsubmit="armstrong()">
-    <input type="text" id="input1">
-    <input type="submit" value="Submit">
-</form>
+        <input type="text" id="input1">
+        <input type="submit" value="Submit">
+    </form>
 </body>
+
 </html>
