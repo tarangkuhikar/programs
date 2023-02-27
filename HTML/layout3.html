@@ -22,30 +22,38 @@
         }
         
         #r4{
-            justify-content: space-evenly;
+            
             display:grid;
+            grid-template-columns: auto auto;
         }
 
         #r4c1 {
-            background-color: gray;
+            /* background-color: gray; */
             width: 30%;
-            height:320px;
             margin-bottom: 10px;
+            height:400px;
+           
+            
+        }
+        #mainbar{
+            height:100%;
             
         }
 
         #r4c2 {
-            width: 68%;
+            width: 100%;
             background-color: gray;
             margin-bottom: 10px;
-            height: 160px;
+            height:70%;
+            float: right;        
             
         }
 
         #r4c3 {
-            width:68%;
+            width:100%;
+            height:28%;
+            margin-top: 290px;
             background-color: gray;
-            height: 160px;
             margin-bottom: 10px;
         }
 
@@ -65,10 +73,11 @@
         <div id="r1">Logo</div>
         <div id="r4">
         <div id="r4c1">Side bar<br>Navigation</div>
+        <div id="mainbar">
         <div id="r4c2">
             Header/Banner
         </div>
-        <div id="r4c3">Body Area</div>
+        <div id="r4c3">Body Area</div></div>
     </div>
         <div id="r5">Footer</div>
     </div>
