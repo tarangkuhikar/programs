@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+        div{
+            width: 100vw;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes example{
+            
+          0%{
+            background-color: red;
+          }
+          10%{
+            background-color: rgb(85, 175, 32);
+          }
+          30%{
+            background-color: rgb(19, 129, 180);
+          }
+          50%{
+            background-color: rgb(55, 197, 185);
+          }
+          60%{
+            background-color: rgb(37, 139, 46);
+          }
+          90%{
+            background-color: rgb(226, 250, 13);
+          }
+          100%{
+            background-color: rgb(53, 10, 122);
+          }
+          
+            
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>CSS Animation</h1>
+    <div></div>
+    <p><b>Note:</b> When an animation is finished,it goes back to its original style.</p>
+
+</body>
+</html>
