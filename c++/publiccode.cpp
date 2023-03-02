@@ -5,7 +5,7 @@ class employee{
 		char name[30];
 		int salary,age;
 		
-	private:
+	public:
 		void setdata()
 		{
 			cout<<"enter the employee name:";

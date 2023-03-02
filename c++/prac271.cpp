@@ -13,7 +13,7 @@ struct employee{
 	
 };
 
-void main(){
+int main(){
 	
 	struct employee e1,e2,*ptr,*ptr1;
 	ptr=&e1;

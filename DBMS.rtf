@@ -1,0 +1,143 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green128\blue128;\red255\green0\blue0;\red255\green0\blue255;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Create new field in table visits:\par
+\cf1\f1\fs19 ALTER\cf2  \cf1 TABLE\cf2  Visits\par
+\cf1 ADD\cf2  phone \cf1 varchar\cf3 (\cf2 10\cf3 )\cf2  \cf3 NOT\cf2  \cf3 NULL;\par
+\cf0\f2\lang1033 CREATE JOB TABLE IN DEMO DATABASE:\par
+\cf3\par
+\cf1\f1 CREATE\cf2  \cf1 TABLE\cf2  JOB\cf3 (\cf2\par
+\tab JOB_ID \cf1 VARCHAR\cf3 (\cf2 15\cf3 )\cf2  \cf3 NOT\cf2  \cf3 NULL,\cf2\par
+\tab JOB_TITLE \cf1 VARCHAR\cf3 (\cf2 30\cf3 )\cf2  \cf3 NOT\cf2  \cf3 NULL,\cf2\par
+\tab MIN_SAL \cf1 DECIMAL\cf3 (\cf2 7\cf3 ,\cf2 2\cf3 )\cf2  \cf3 NOT\cf2  \cf3 NULL,\cf2\par
+\tab MAX_SAL \cf1 DECIMAL\cf3 (\cf2 7\cf3 ,\cf2 2\cf3 )\cf2  \cf3 NOT\cf2  \cf3 NULL\cf2\par
+\par
+\cf3 );\par
+\par
+\f2 insert data in table JOB:\par
+\par
+\cf1\f1 INSERT\cf2  \cf1 INTO\cf2  JOB\cf3 (\cf2 JOB_ID\cf3 ,\cf2 JOB_TITLE\cf3 ,\cf2 MIN_SAL\cf3 ,\cf2 MAX_SAL\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 'FI MGR'\cf3 ,\cf4 'Finance Manager'\cf3 ,\cf4 '8200'\cf3 ,\cf4 '12000'\cf3 );\cf2\par
+\cf1 INSERT\cf2  \cf1 INTO\cf2  JOB\cf3 (\cf2 JOB_ID\cf3 ,\cf2 JOB_TITLE\cf3 ,\cf2 MIN_SAL\cf3 ,\cf2 MAX_SAL\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 'FI ACC'\cf3 ,\cf4 'Account'\cf3 ,\cf4 '4200'\cf3 ,\cf4 '9000'\cf3 );\cf2\par
+\cf1 INSERT\cf2  \cf1 INTO\cf2  JOB\cf3 (\cf2 JOB_ID\cf3 ,\cf2 JOB_TITLE\cf3 ,\cf2 MIN_SAL\cf3 ,\cf2 MAX_SAL\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 'LEC'\cf3 ,\cf4 'Lecturer'\cf3 ,\cf4 '6000'\cf3 ,\cf4 '17000'\cf3 );\cf2\par
+\cf1 INSERT\cf2  \cf1 INTO\cf2  JOB\cf3 (\cf2 JOB_ID\cf3 ,\cf2 JOB_TITLE\cf3 ,\cf2 MIN_SAL\cf3 ,\cf2 MAX_SAL\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 'COMP OP'\cf3 ,\cf4 'Computer Operator'\cf3 ,\cf4 '1500'\cf3 ,\cf4 '3000'\cf3 );\par
+\par
+\f2 insert data into deposit:\par
+\par
+\cf1\f1 INSERT\cf2  \cf1 INTO\cf2  DEPOSIT\cf3 (\cf2 ACTNO\cf3 ,\cf2 CNAME\cf3 ,\cf2 BNAME\cf3 ,\cf2 AMOUNT\cf3 ,\cf2 ADATE\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 '101'\cf3 ,\cf4 'Anil'\cf3 ,\cf4 'andheri'\cf3 ,\cf4 '7000'\cf3 ,\cf4 '01-jan-06'\cf3 );\cf2\par
+\cf1 INSERT\cf2  \cf1 INTO\cf2  DEPOSIT\cf3 (\cf2 ACTNO\cf3 ,\cf2 CNAME\cf3 ,\cf2 BNAME\cf3 ,\cf2 AMOUNT\cf3 ,\cf2 ADATE\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 '102'\cf3 ,\cf4 'sunil'\cf3 ,\cf4 'virar'\cf3 ,\cf4 '5000'\cf3 ,\cf4 '15-jul-06'\cf3 );\cf2\par
+\cf1 INSERT\cf2  \cf1 INTO\cf2  DEPOSIT\cf3 (\cf2 ACTNO\cf3 ,\cf2 CNAME\cf3 ,\cf2 BNAME\cf3 ,\cf2 AMOUNT\cf3 ,\cf2 ADATE\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 '103'\cf3 ,\cf4 'jay'\cf3 ,\cf4 'villepari'\cf3 ,\cf4 '6500'\cf3 ,\cf4 '02-mar-06'\cf3 );\cf2\par
+\cf1 INSERT\cf2  \cf1 INTO\cf2  DEPOSIT\cf3 (\cf2 ACTNO\cf3 ,\cf2 CNAME\cf3 ,\cf2 BNAME\cf3 ,\cf2 AMOUNT\cf3 ,\cf2 ADATE\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 '104'\cf3 ,\cf4 'vijay'\cf3 ,\cf4 'andheri'\cf3 ,\cf4 '8000'\cf3 ,\cf4 '17-sep-06'\cf3 );\cf2\par
+\cf1 INSERT\cf2  \cf1 INTO\cf2  DEPOSIT\cf3 (\cf2 ACTNO\cf3 ,\cf2 CNAME\cf3 ,\cf2 BNAME\cf3 ,\cf2 AMOUNT\cf3 ,\cf2 ADATE\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 '105'\cf3 ,\cf4 'keyur'\cf3 ,\cf4 'dadar'\cf3 ,\cf4 '7500'\cf3 ,\cf4 '19-nov-06'\cf3 );\cf2\par
+\cf1 INSERT\cf2  \cf1 INTO\cf2  DEPOSIT\cf3 (\cf2 ACTNO\cf3 ,\cf2 CNAME\cf3 ,\cf2 BNAME\cf3 ,\cf2 AMOUNT\cf3 ,\cf2 ADATE\cf3 )\cf2  \cf1 VALUES\cf3 (\cf4 '106'\cf3 ,\cf4 'mayuri'\cf3 ,\cf4 'borivali'\cf3 ,\cf4 '5500'\cf3 ,\cf4 '21-dec-06'\cf3 );\par
+\par
+\f2 SHOW DEPOSIT table:\par
+\cf1\f1 select\cf2  \cf3 *\cf2  \cf1 from\cf2  DEPOSIT\cf3 ;\par
+\par
+\f2 ADD column:\par
+ALTER TABLE DEPOSIT\par
+ADD LOOCATION VARCHAR(50) NOT  NULL;\par
+DELETE COLUMN:\par
+ALTER TABLE DEPOSIT\par
+DROP COLUMN LOOCATION; \par
+\par
+DELETE TABLE:\par
+DROP DEPOSIT;\par
+\par
+DELETE DATA:\par
+\par
+TRUNCATE DEPOSIT;\par
+\par
+SELECT SPECIAL VALUES using where and order by:\par
+\par
+\cf1\f1 select\cf2  \cf3 *\cf2  \cf1 from\cf2  job\cf3 ;\cf2\par
+\par
+\cf1 select\cf2  \cf3 *\cf2  \cf1 from\cf2  job \cf1 order\cf2  \cf1 by\cf2  job_title\cf3 ;\cf2\par
+\cf1 select\cf2  \cf3 *\cf2  \cf1 from\cf2  job \cf1 order\cf2  \cf1 by\cf2  job_title \cf1 desc\cf3 ;\cf2\par
+\cf1 select\cf2  \cf3 *\cf2  \cf1 from\cf2  job \cf1 where\cf2  MIN_SAL \cf3 between\cf2  5000 \cf3 and\cf2  10000\cf3 ;\cf2\par
+\cf1 select\cf2  \cf3 *\cf2  \cf1 from\cf2  job \cf1 where\cf2  JOB_ID\cf3 =\cf4 'MK MGR'\cf2  \cf3 and\cf2  MAX_SAL\cf3 =\cf4 '15000'\cf3 ;\cf2\par
+\par
+\cf1 select\cf2  \cf3 *\cf2  \cf1 from\cf2  job \cf1 where\cf2  JOB_ID\cf3 =\cf4 'MK MGR'\cf2  \cf3 and\cf2  MAX_SAL\cf3 =\cf4 '12000'\cf3 ;\cf2\par
+\par
+\cf1 select\cf2  \cf3 *\cf2  \cf1 from\cf2  job \cf1 where\cf2  JOB_ID\cf3 =\cf4 'MK MGR'\cf2  \cf3 or\cf2  MAX_SAL\cf3 =\cf4 '12000'\cf3 ;\par
+\par
+\f2 change data using update:\par
+\cf5\f1 update\cf2  job \cf1 set\cf2  job_id\cf3 =\cf4 'p11'\cf2  \cf1 where\cf2  job_id\cf3 =\cf4 'IT PROG'\cf3 ;\cf2\par
+\par
+\cf5 update\cf2  job \cf1 set\cf2  job_Location\cf3 =\cf4 'surat'\cf3 ,\cf2 MAX_SAL\cf3 =\cf4 '50000'\cf2  \cf1 where\cf2  JOB_ID\cf3 =\cf4 'p11'\cf2  \cf3 and\cf2  MIN_SAL\cf3 =\cf4 '4000'\cf3 ;\cf2  \par
+\par
+\cf5 update\cf2  job \cf1 set\cf2  job_Location\cf3 =\cf4 'surat'\cf3 ;\par
+\par
+\f2 delete data from table using where:\par
+\par
+\cf1\f1 delete\cf2  \cf1 from\cf2  job \cf1 where\cf2  job_id\cf3 =\cf4 'p11'\cf3 ;\par
+\par
+\f2 select top rows with top:\par
+\cf1\f1 select\cf2  \cf1 top\cf2  3 \cf3 *\cf2  \cf1 from\cf2  job\cf3 ;\cf2\par
+\par
+\cf1 select\cf2  \cf1 top\cf2  3 job_id\cf3 ,\cf2 JOB_TITLE \cf1 from\cf2  job\cf3 ;\par
+\par
+\f2 sql functions:\f1\par
+\par
+\cf1 select\cf2  \cf1 char\cf3 (\cf2 65\cf3 )\cf2\par
+\cf1 select\cf2  \cf5 ASCII\cf3 (\cf4 'A'\cf3 )\par
+\cf1 SELECT\cf2  \cf5 CHARINDEX\cf3 (\cf4 'cus'\cf3 ,\cf2  \cf4 'Customer'\cf3 )\cf2  \cf1 AS\cf2  MatchPosition\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 CONCAT\cf3 (\cf4 'W3Schools'\cf3 ,\cf2  \cf4 '.com'\cf3 );\cf2\par
+\cf1 select\cf2  \cf4 'hello'\cf3 +\cf4 'all'\cf3 ;\cf2\par
+\cf1 select\cf2  \cf5 CONCAT_WS\cf3 (\cf4 ' '\cf3 ,\cf4 'hello'\cf3 ,\cf4 'all'\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 DATALENGTH\cf3 (\cf4 'W3Schools.com'\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 DIFFERENCE\cf3 (\cf4 'Juice'\cf3 ,\cf2  \cf4 'Jucy'\cf3 );\cf2\par
+\par
+\cf1 DECLARE\cf2  @d \cf1 DATETIME\cf2  \cf3 =\cf2  \cf4 '12/01/2018'\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 FORMAT\cf1  \cf3 (\cf2 @d\cf3 ,\cf2  \cf4 'd'\cf3 ,\cf2  \cf4 'en-US'\cf3 )\cf2  \cf1 AS\cf2  \cf4 'US English Result'\cf3 ,\cf2\par
+               \cf5 FORMAT\cf1  \cf3 (\cf2 @d\cf3 ,\cf2  \cf4 'd'\cf3 ,\cf2  \cf4 'no'\cf3 )\cf2  \cf1 AS\cf2  \cf4 'Norwegian Result'\cf3 ,\cf2\par
+               \cf5 FORMAT\cf1  \cf3 (\cf2 @d\cf3 ,\cf2  \cf4 'd'\cf3 ,\cf2  \cf4 'zu'\cf3 )\cf2  \cf1 AS\cf2  \cf4 'Zulu Result'\cf3 ;\cf2\par
+\par
+\cf1 SELECT\cf2  \cf5 FORMAT\cf3 (\cf2 123456789\cf3 ,\cf2  \cf4 '##-##-#####'\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf3 LEFT(\cf4 'SQL Tutorial'\cf3 ,\cf2  3\cf3 )\cf2  \cf1 AS\cf2  ExtractString\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf1 NCHAR\cf3 (\cf2 65\cf3 )\cf2  \cf1 AS\cf2  NumberCodeToUnicode\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 PATINDEX\cf3 (\cf4 '%schools%'\cf3 ,\cf2  \cf4 'W3Schools.com'\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 QUOTENAME\cf3 (\cf4 'abcdef'\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 SPACE\cf3 (\cf2 10\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 SOUNDEX\cf3 (\cf4 'Juice'\cf3 ),\cf2  \cf5 SOUNDEX\cf3 (\cf4 'Jucy'\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 LTRIM\cf3 (\cf4 ' SQL Tutorial     '\cf3 )\cf2  \cf1 AS\cf2  RightTrimmedString\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 TRIM\cf3 (\cf4 'sql '\cf2  \cf1 from\cf4 '     SQL Tutorial!     '\cf3 )\cf2  \cf1 AS\cf2  TrimmedString\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 SUBSTRING\cf3 (\cf4 'SQL Tutorial'\cf3 ,\cf2 1\cf3 ,\cf2 3\cf3 )\cf2  \cf1 AS\cf2  ExtractString\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 TRANSLATE\cf3 (\cf4 'Monday'\cf3 ,\cf2  \cf4 'Mmo'\cf3 ,\cf2  \cf4 'Sde'\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 UPPER\cf3 (\cf4 'SQL Tutorial is FUN!'\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 LOWER\cf3 (\cf4 'SQL Tutorial is FUN!'\cf3 );\cf2\par
+\par
+\cf1 SELECT\cf2  \cf5 Abs\cf3 (-\cf2 243.5\cf3 )\cf2  \cf1 AS\cf2  AbsNum\cf3 ;\cf2\par
+\cf1 select\cf2  \cf5 asin\cf3 (-\cf2 0.1\cf3 )\cf2  \cf1 as\cf2  \cf5 asin\cf3 ;\cf2\par
+\cf1 select\cf2  \cf5 acos\cf3 (-\cf2 1\cf3 )\cf1 as\cf2  \cf5 acos\cf3 ;\cf2\par
+\cf1 select\cf2  \cf5 atan\cf3 (\cf2 45\cf3 )\cf2  \cf1 as\cf2  \cf5 atan\cf3 ;\cf2\par
+\cf1 select\cf2  \cf5 count\cf3 (\cf2 job_id\cf3 )\cf2  \cf1 as\cf2  job_id \cf1 from\cf2  job\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 DEGREES\cf3 (\cf2 1.5\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 EXP\cf3 (\cf2 3.14\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 LOG\cf3 (\cf2 2\cf3 );\cf2\par
+\cf1 select\cf2  \cf5 LOG10\cf3 (\cf2 7\cf3 );\cf2\par
+\cf1 select\cf2  \cf5 max\cf3 (\cf2 max_sal\cf3 )\cf2  \cf1 from\cf2  job\cf3 ;\cf2\par
+\cf1 select\cf2  \cf5 min\cf3 (\cf2 max_sal\cf3 )\cf2  \cf1 from\cf2  job\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 PI\cf3 ();\cf2\par
+\cf1 SELECT\cf2  \cf5 POWER\cf3 (\cf2 4\cf3 ,\cf2  2\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 RADIANS\cf3 (\cf2 180\cf3 );\cf2\par
+\cf1 SELECT\cf2  \cf5 RAND\cf3 ();\cf2\par
+\cf1 SELECT\cf2  \cf5 ROUND\cf3 (\cf2 235.415\cf3 ,\cf2 2\cf3 )\cf2  \cf1 AS\cf2  RoundValue\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 SIGN\cf3 (\cf2 12344.432\cf3 );\cf2\par
+\cf1 select\cf2  \cf5 sum\cf3 (\cf2 min_sal\cf3 )\cf2  \cf1 as\cf2  job_id \cf1 from\cf2  job\cf3 ;\cf2\par
+\par
+\par
+\cf1 SELECT\cf2  \cf5 SYSDATETIME\cf3 ()\cf2  \cf1 AS\cf2  \cf5 SysDateTime\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 ATN2\cf3 (\cf2 0.50\cf3 ,\cf2  1\cf3 );\cf2\par
+\par
+\par
+\cf1 SELECT\cf2  \cf5 CURRENT_USER\cf3 ;\cf2\par
+\cf1 SELECT\cf2  \cf5 CAST\cf3 (\cf2 25.65 \cf1 AS\cf2  \cf1 int\cf3 );\cf2\par
+\par
+\cf3\f2  \cf2\f1\par
+\cf3\f2\par
+\par
+\f1\par
+\par
+\cf0\f0\fs22\lang9\par
+}
+ 
